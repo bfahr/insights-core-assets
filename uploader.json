@@ -1893,14 +1893,9 @@
             "symbolic_name": "messages"
         },
         {
-            "file": "/etc/()*modprobe\\.conf",
+            "file": "/etc/modprobe.conf",
             "pattern": [],
-            "symbolic_name": "modprobe_conf"
-        },
-        {
-            "file": "/etc/modprobe.d/()*.*\\.conf",
-            "pattern": [],
-            "symbolic_name": "modprobe_d"
+            "symbolic_name": "modprobe"
         },
         {
             "file": "/etc/()*mongod.conf",
@@ -3216,6 +3211,11 @@
         {
             "glob": "/sys/bus/pci/devices/*/mlx4_port[0-9]",
             "symbolic_name": "mlx4_port",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/modprobe.d/*.conf",
+            "symbolic_name": "modprobe",
             "pattern": []
         },
         {

@@ -1893,14 +1893,9 @@
             "symbolic_name": "messages"
         },
         {
-            "file": "/etc/()*modprobe\\.conf",
+            "file": "/etc/modprobe.conf",
             "pattern": [],
-            "symbolic_name": "modprobe_conf"
-        },
-        {
-            "file": "/etc/modprobe.d/()*.*\\.conf",
-            "pattern": [],
-            "symbolic_name": "modprobe_d"
+            "symbolic_name": "modprobe"
         },
         {
             "file": "/etc/()*mongod.conf",
@@ -3206,6 +3201,11 @@
         {
             "glob": "/etc/security/limits.d/*.conf",
             "symbolic_name": "limits_conf",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/modprobe.d/*.conf",
+            "symbolic_name": "modprobe",
             "pattern": []
         },
         {
