@@ -1663,11 +1663,6 @@
             "symbolic_name": "jbcs_httpd24_httpd_error_log"
         },
         {
-            "file": "/etc/sysconfig/network-scripts/()*ifcfg-.*",
-            "pattern": [],
-            "symbolic_name": "ifcfg"
-        },
-        {
             "file": "/etc/sysconfig/network-scripts/()*route-.*",
             "pattern": [],
             "symbolic_name": "ifcfg_static_route"
@@ -3164,6 +3159,11 @@
         {
             "glob": "/etc/systemd/journald.conf.d/*.conf",
             "symbolic_name": "etc_journald_conf_d",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/sysconfig/network-scripts/ifcfg-*",
+            "symbolic_name": "ifcfg",
             "pattern": []
         },
         {
