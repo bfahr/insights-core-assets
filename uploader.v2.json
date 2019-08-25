@@ -1663,11 +1663,6 @@
             "symbolic_name": "jbcs_httpd24_httpd_error_log"
         },
         {
-            "file": "/etc/sysconfig/network-scripts/()*route-.*",
-            "pattern": [],
-            "symbolic_name": "ifcfg_static_route"
-        },
-        {
             "file": "/etc/ImageMagick/()*policy\\.xml",
             "pattern": [
                 "</policymap>",
@@ -3159,6 +3154,11 @@
         {
             "glob": "/etc/sysconfig/network-scripts/ifcfg-*",
             "symbolic_name": "ifcfg",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/sysconfig/network-scripts/route-*",
+            "symbolic_name": "ifcfg_static_route",
             "pattern": []
         },
         {
