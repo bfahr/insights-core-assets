@@ -1736,14 +1736,9 @@
             "symbolic_name": "ksmstate"
         },
         {
-            "file": "/etc/security/()*limits\\.conf",
+            "file": "/etc/security/limits.conf",
             "pattern": [],
             "symbolic_name": "limits_conf"
-        },
-        {
-            "file": "/etc/security/limits.d/()*.*\\.conf",
-            "pattern": [],
-            "symbolic_name": "limits_d"
         },
         {
             "file": "/etc/lvm/lvm.conf",
@@ -3206,6 +3201,11 @@
         {
             "glob": "/sys/fs/cgroup/cpu/kubepods.slice/kubepods-burstable.slice/kubepods-burstable-pod[a-f0-9_]*.slice/cpu.cfs_quota_us",
             "symbolic_name": "kubepods_cpu_quota",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/security/limits.d/*.conf",
+            "symbolic_name": "limits_conf",
             "pattern": []
         },
         {
