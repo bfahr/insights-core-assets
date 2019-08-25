@@ -1537,7 +1537,7 @@
             "symbolic_name": "ovirt_engine_ui_log"
         },
         {
-            "file": "/etc/systemd/()*journald\\.conf",
+            "file": "/etc/systemd/journald.conf",
             "pattern": [],
             "symbolic_name": "etc_journald_conf"
         },
