@@ -1470,14 +1470,6 @@
             "symbolic_name": "x86_retp_enabled"
         },
         {
-            "file": "/var/log/dirsrv/.*/()*(errors|errors\\.2.*)",
-            "pattern": [
-                "DSRetroclPlugin - delete_changerecord: could not delete change record",
-                "We recommend to increase the entry cache size nsslapd-cachememsize"
-            ],
-            "symbolic_name": "dirsrv_errors"
-        },
-        {
             "file": "/var/log/dmesg",
             "pattern": [
                 "L1TF",
@@ -3167,6 +3159,11 @@
         {
             "glob": "/sys/devices/system/cpu/vulnerabilities/*",
             "symbolic_name": "cpu_vulns",
+            "pattern": []
+        },
+        {
+            "glob": "/var/log/dirsrv/*/errors*",
+            "symbolic_name": "dirsrv_errors",
             "pattern": []
         },
         {
