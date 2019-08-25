@@ -1898,13 +1898,23 @@
             "symbolic_name": "modprobe"
         },
         {
-            "file": "/etc/()*mongod.conf",
+            "file": "/etc/mongod.conf",
             "pattern": [
                 "dbpath",
                 "destination",
                 "syslog",
                 "systemLog"
             ],
+            "symbolic_name": "mongod_conf"
+        },
+        {
+            "file": "/etc/mongodb.conf",
+            "pattern": [],
+            "symbolic_name": "mongod_conf"
+        },
+        {
+            "file": "/etc/opt/rh/rh-mongodb26/mongod.conf",
+            "pattern": [],
             "symbolic_name": "mongod_conf"
         },
         {
@@ -2311,15 +2321,6 @@
             "file": "/etc/resolv.conf",
             "pattern": [],
             "symbolic_name": "resolv_conf"
-        },
-        {
-            "file": "/etc/opt/rh/rh-mongodb26/()*mongod.conf",
-            "pattern": [
-                "destination",
-                "syslog",
-                "systemLog"
-            ],
-            "symbolic_name": "rh_mongodb26_conf"
         },
         {
             "file": "/etc/sysconfig/rhn/()*rhn-entitlement-cert\\.xml.*",
