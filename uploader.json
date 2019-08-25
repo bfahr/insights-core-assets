@@ -2718,12 +2718,7 @@
             "symbolic_name": "x86_pti_enabled"
         },
         {
-            "file": "/etc/()*xinetd\\.conf",
-            "pattern": [],
-            "symbolic_name": "xinetd_conf"
-        },
-        {
-            "file": "/etc/xinetd.d/()*.*",
+            "file": "/etc/xinetd.conf",
             "pattern": [],
             "symbolic_name": "xinetd_conf"
         },
@@ -3141,6 +3136,11 @@
         {
             "glob": "/etc/virt-who.d/*.conf",
             "symbolic_name": "virt_who_conf",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/xinetd.d/*",
+            "symbolic_name": "xinetd_conf",
             "pattern": []
         },
         {
