@@ -1726,7 +1726,7 @@
             "symbolic_name": "kexec_crash_size"
         },
         {
-            "file": "/etc/()*krb5\\.conf",
+            "file": "/etc/krb5.conf",
             "pattern": [],
             "symbolic_name": "krb5"
         },
@@ -3205,7 +3205,7 @@
         },
         {
             "glob": "/etc/krb5.conf.d/*",
-            "symbolic_name": "krb5_conf_d",
+            "symbolic_name": "krb5",
             "pattern": []
         },
         {
