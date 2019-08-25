@@ -2248,11 +2248,6 @@
             "symbolic_name": "resolv_conf"
         },
         {
-            "file": "/etc/sysconfig/rhn/()*rhn-entitlement-cert\\.xml.*",
-            "pattern": [],
-            "symbolic_name": "rhn_entitlement_cert_xml"
-        },
-        {
             "file": "/etc/rhn/rhn.conf",
             "pattern": [],
             "symbolic_name": "rhn_conf"
@@ -3142,6 +3137,16 @@
         {
             "glob": "/etc/libvirt/qemu/*.xml",
             "symbolic_name": "qemu_xml",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/sysconfig/rhn/rhn-entitlement-cert.xml*",
+            "symbolic_name": "rhn_entitlement_cert_xml",
+            "pattern": []
+        },
+        {
+            "glob": "/conf/rhn/sysconfig/rhn/rhn-entitlement-cert.xml*",
+            "symbolic_name": "rhn_entitlement_cert_xml",
             "pattern": []
         },
         {
