@@ -2537,7 +2537,12 @@
             "symbolic_name": "sysconfig_memcached"
         },
         {
-            "file": "/etc/sysconfig/()*mongod",
+            "file": "/etc/sysconfig/mongod",
+            "pattern": [],
+            "symbolic_name": "sysconfig_mongod"
+        },
+        {
+            "file": "/etc/opt/rh/rh-mongodb26/sysconfig/mongod",
             "pattern": [],
             "symbolic_name": "sysconfig_mongod"
         },
@@ -2550,11 +2555,6 @@
             "file": "/etc/sysconfig/network",
             "pattern": [],
             "symbolic_name": "sysconfig_network"
-        },
-        {
-            "file": "/etc/opt/rh/rh-mongodb26/sysconfig/()*mongod",
-            "pattern": [],
-            "symbolic_name": "sysconfig_rh_mongodb26"
         },
         {
             "file": "/etc/sysconfig/prelink",
