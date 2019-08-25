@@ -1244,38 +1244,6 @@
             "symbolic_name": "avc_cache_threshold"
         },
         {
-            "file": "/var/log/tomcat/()*catalina\\.out",
-            "pattern": [
-                "APPARENT DEADLOCK!",
-                "NoCobblerTokenException: We had an error trying to login."
-            ],
-            "symbolic_name": "catalina_out"
-        },
-        {
-            "file": "/var/log/tomcat6/()*catalina\\.out",
-            "pattern": [
-                "APPARENT DEADLOCK!",
-                "NoCobblerTokenException: We had an error trying to login."
-            ],
-            "symbolic_name": "catalina_out"
-        },
-        {
-            "file": "/tomcat-logs/tomcat/()*catalina\\.out",
-            "pattern": [
-                "APPARENT DEADLOCK!",
-                "NoCobblerTokenException: We had an error trying to login."
-            ],
-            "symbolic_name": "catalina_out"
-        },
-        {
-            "file": "/tomcat-logs/tomcat6/()*catalina\\.out",
-            "pattern": [
-                "APPARENT DEADLOCK!",
-                "NoCobblerTokenException: We had an error trying to login."
-            ],
-            "symbolic_name": "catalina_out"
-        },
-        {
             "file": "/proc/driver/cciss/()*cciss.*",
             "pattern": [],
             "symbolic_name": "cciss"
@@ -3176,6 +3144,16 @@
         {
             "glob": "/proc/net/bonding/bond*",
             "symbolic_name": "bond",
+            "pattern": []
+        },
+        {
+            "glob": "/var/log/tomcat*/catalina.out",
+            "symbolic_name": "catalina_out",
+            "pattern": []
+        },
+        {
+            "glob": "/tomcat-logs/tomcat*/catalina.out",
+            "symbolic_name": "catalina_out",
             "pattern": []
         },
         {
