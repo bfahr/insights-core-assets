@@ -1244,11 +1244,6 @@
             "symbolic_name": "avc_cache_threshold"
         },
         {
-            "file": "/proc/driver/cciss/()*cciss.*",
-            "pattern": [],
-            "symbolic_name": "cciss"
-        },
-        {
             "file": "/sys/bus/usb/drivers/cdc_wdm/module/refcnt",
             "pattern": [],
             "symbolic_name": "cdc_wdm"
@@ -3149,6 +3144,11 @@
         {
             "glob": "/tomcat-logs/tomcat*/catalina.out",
             "symbolic_name": "catalina_out",
+            "pattern": []
+        },
+        {
+            "glob": "/proc/driver/cciss/cciss*",
+            "symbolic_name": "cciss",
             "pattern": []
         },
         {
