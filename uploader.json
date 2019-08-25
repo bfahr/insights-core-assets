@@ -2211,11 +2211,6 @@
             "symbolic_name": "qemu_conf"
         },
         {
-            "file": "/etc/libvirt/qemu/()*.+\\.xml",
-            "pattern": [],
-            "symbolic_name": "qemu_xml"
-        },
-        {
             "file": "/etc/rabbitmq/rabbitmq-env.conf",
             "pattern": [],
             "symbolic_name": "rabbitmq_env"
@@ -3147,6 +3142,11 @@
         {
             "glob": "/database/postgresql-*.log",
             "symbolic_name": "postgresql_log",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/libvirt/qemu/*.xml",
+            "symbolic_name": "qemu_xml",
             "pattern": []
         },
         {
