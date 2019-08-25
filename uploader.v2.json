@@ -1542,11 +1542,6 @@
             "symbolic_name": "etc_journald_conf"
         },
         {
-            "file": "/etc/systemd/journald.conf.d/()*.+\\.conf",
-            "pattern": [],
-            "symbolic_name": "etc_journald_conf_d"
-        },
-        {
             "file": "/etc/fstab",
             "pattern": [],
             "symbolic_name": "fstab"
@@ -3159,6 +3154,11 @@
         {
             "glob": "/var/log/dirsrv/*/errors*",
             "symbolic_name": "dirsrv_errors",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/systemd/journald.conf.d/*.conf",
+            "symbolic_name": "etc_journald_conf_d",
             "pattern": []
         },
         {
