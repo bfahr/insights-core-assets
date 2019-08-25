@@ -2179,18 +2179,6 @@
             "symbolic_name": "postgresql_conf"
         },
         {
-            "file": "/var/lib/pgsql/data/pg_log/()*postgresql-.+\\.log",
-            "pattern": [
-                "FATAL",
-                "checkpoints are occurring too frequently",
-                "connection limit exceeded for non-superusers",
-                "database is not accepting commands to avoid wraparound data loss in database",
-                "must be vacuumed within",
-                "remaining connection slots are reserved for non-replication superuser connections"
-            ],
-            "symbolic_name": "postgresql_log"
-        },
-        {
             "file": "/proc/net/snmp",
             "pattern": [],
             "symbolic_name": "proc_snmp_ipv4"
@@ -3134,6 +3122,21 @@
         {
             "glob": "/etc/opt/rh/rh-nginx*/nginx/default.d/*",
             "symbolic_name": "nginx_conf",
+            "pattern": []
+        },
+        {
+            "glob": "/var/lib/pgsql/data/pg_log/postgresql-*.log",
+            "symbolic_name": "postgresql_log",
+            "pattern": []
+        },
+        {
+            "glob": "/opt/rh/postgresql92/root/var/lib/pgsql/data/pg_log/postgresql-*.log",
+            "symbolic_name": "postgresql_log",
+            "pattern": []
+        },
+        {
+            "glob": "/database/postgresql-*.log",
+            "symbolic_name": "postgresql_log",
             "pattern": []
         },
         {
