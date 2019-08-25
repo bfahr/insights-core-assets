@@ -2619,11 +2619,6 @@
             "symbolic_name": "up2date_log"
         },
         {
-            "file": "/usr/lib/systemd/journald.conf.d/()*.+\\.conf",
-            "pattern": [],
-            "symbolic_name": "usr_journald_conf_d"
-        },
-        {
             "file": "/etc/vdsm/vdsm.conf",
             "pattern": [],
             "symbolic_name": "vdsm_conf"
@@ -3147,6 +3142,11 @@
         {
             "glob": "/run/tmpfiles.d/*.conf",
             "symbolic_name": "tmpfilesd",
+            "pattern": []
+        },
+        {
+            "glob": "/usr/lib/systemd/journald.conf.d/*.conf",
+            "symbolic_name": "usr_journald_conf_d",
             "pattern": []
         },
         {
