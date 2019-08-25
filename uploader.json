@@ -2607,21 +2607,6 @@
             "symbolic_name": "thp_use_zero_page"
         },
         {
-            "file": "/etc/tmpfiles.d/()*.*\\.conf",
-            "pattern": [],
-            "symbolic_name": "tmpfilesd"
-        },
-        {
-            "file": "/usr/lib/tmpfiles.d/()*.*\\.conf",
-            "pattern": [],
-            "symbolic_name": "tmpfilesd"
-        },
-        {
-            "file": "/run/tmpfiles.d/()*.*\\.conf",
-            "pattern": [],
-            "symbolic_name": "tmpfilesd"
-        },
-        {
             "file": "/etc/tuned.conf",
             "pattern": [],
             "symbolic_name": "tuned_conf"
@@ -3152,6 +3137,21 @@
         {
             "glob": "/conf/rhn/sysconfig/rhn/rhn-entitlement-cert.xml*",
             "symbolic_name": "rhn_entitlement_cert_xml",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/tmpfiles.d/*.conf",
+            "symbolic_name": "tmpfilesd",
+            "pattern": []
+        },
+        {
+            "glob": "/usr/lib/tmpfiles.d/*.conf",
+            "symbolic_name": "tmpfilesd",
+            "pattern": []
+        },
+        {
+            "glob": "/run/tmpfiles.d/*.conf",
+            "symbolic_name": "tmpfilesd",
             "pattern": []
         },
         {
