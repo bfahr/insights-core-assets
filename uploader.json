@@ -2174,11 +2174,6 @@
             "symbolic_name": "password_auth"
         },
         {
-            "file": "/etc/yum/pluginconf.d/()*\\w+\\.conf",
-            "pattern": [],
-            "symbolic_name": "pluginconf_d"
-        },
-        {
             "file": "/var/lib/pgsql/data/postgresql.conf",
             "pattern": [],
             "symbolic_name": "postgresql_conf"
@@ -3144,6 +3139,11 @@
         {
             "glob": "/etc/opt/rh/rh-nginx*/nginx/default.d/*",
             "symbolic_name": "nginx_conf",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/yum/pluginconf.d/*.conf",
+            "symbolic_name": "pluginconf_d",
             "pattern": []
         },
         {
