@@ -1663,25 +1663,7 @@
             "symbolic_name": "jbcs_httpd24_httpd_error_log"
         },
         {
-            "file": "/etc/ImageMagick/()*policy\\.xml",
-            "pattern": [
-                "</policymap>",
-                "<policy",
-                "<policymap>"
-            ],
-            "symbolic_name": "imagemagick_policy"
-        },
-        {
-            "file": "/usr/lib64/ImageMagick-6.5.4/config/()*policy\\.xml",
-            "pattern": [
-                "</policymap>",
-                "<policy",
-                "<policymap>"
-            ],
-            "symbolic_name": "imagemagick_policy"
-        },
-        {
-            "file": "/usr/lib/ImageMagick-6.5.4/config/()*policy\\.xml",
+            "file": "/etc/ImageMagick/policy.xml",
             "pattern": [
                 "</policymap>",
                 "<policy",
@@ -3159,6 +3141,11 @@
         {
             "glob": "/etc/sysconfig/network-scripts/route-*",
             "symbolic_name": "ifcfg_static_route",
+            "pattern": []
+        },
+        {
+            "glob": "/usr/lib*/ImageMagick-6.5.4/config/policy.xml",
+            "symbolic_name": "imagemagick_policy",
             "pattern": []
         },
         {
