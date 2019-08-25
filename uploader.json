@@ -1244,11 +1244,6 @@
             "symbolic_name": "avc_cache_threshold"
         },
         {
-            "file": "/proc/net/bonding/()*bond.*",
-            "pattern": [],
-            "symbolic_name": "bond"
-        },
-        {
             "file": "/var/log/tomcat/()*catalina\\.out",
             "pattern": [
                 "APPARENT DEADLOCK!",
@@ -3178,6 +3173,11 @@
         }
     ],
     "globs": [
+        {
+            "glob": "/proc/net/bonding/bond*",
+            "symbolic_name": "bond",
+            "pattern": []
+        },
         {
             "glob": "/sys/devices/system/cpu/cpu[0-9]*/online",
             "symbolic_name": "cpu_cores",
