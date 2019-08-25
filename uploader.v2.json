@@ -2655,23 +2655,7 @@
             "symbolic_name": "vdsm_logger_conf"
         },
         {
-            "file": "/etc/()*virt-who\\.conf",
-            "pattern": [
-                "[",
-                "configs",
-                "debug",
-                "env",
-                "interval",
-                "log_",
-                "oneshot",
-                "owner",
-                "server",
-                "type"
-            ],
-            "symbolic_name": "virt_who_conf"
-        },
-        {
-            "file": "/etc/virt-who.d/()*.*\\.conf",
+            "file": "/etc/virt-who.conf",
             "pattern": [
                 "[",
                 "configs",
@@ -3147,6 +3131,11 @@
         {
             "glob": "/usr/lib/systemd/journald.conf.d/*.conf",
             "symbolic_name": "usr_journald_conf_d",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/virt-who.d/*.conf",
+            "symbolic_name": "virt_who_conf",
             "pattern": []
         },
         {
