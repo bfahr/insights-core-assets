@@ -1969,14 +1969,6 @@
             "symbolic_name": "nfs_exports"
         },
         {
-            "file": "/etc/exports.d/()*.*\\.exports",
-            "pattern": [
-                "*",
-                "no_root_squash"
-            ],
-            "symbolic_name": "nfs_exports_d"
-        },
-        {
             "file": "/etc/nginx/()*.conf",
             "pattern": [],
             "symbolic_name": "nginx_conf"
@@ -3147,6 +3139,11 @@
         {
             "glob": "/sys/class/net/*/address",
             "symbolic_name": "mac_addresses",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/exports.d/*.exports",
+            "symbolic_name": "nfs_exports_d",
             "pattern": []
         },
         {
