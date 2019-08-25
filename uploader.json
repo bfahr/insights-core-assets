@@ -1316,13 +1316,6 @@
             "symbolic_name": "ceph_log"
         },
         {
-            "file": "/var/log/ceph/()*ceph-osd.*\\.log$",
-            "pattern": [
-                "common/Thread.cc"
-            ],
-            "symbolic_name": "ceph_osd_log"
-        },
-        {
             "file": "/proc/cgroups",
             "pattern": [],
             "symbolic_name": "cgroups"
@@ -3154,6 +3147,11 @@
         {
             "glob": "/proc/driver/cciss/cciss*",
             "symbolic_name": "cciss",
+            "pattern": []
+        },
+        {
+            "glob": "/var/log/ceph/ceph-osd*.log",
+            "symbolic_name": "ceph_osd_log",
             "pattern": []
         },
         {
