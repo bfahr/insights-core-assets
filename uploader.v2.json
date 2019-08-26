@@ -2733,11 +2733,6 @@
             "symbolic_name": "logrotate_conf"
         },
         {
-            "file": "/etc/logrotate.d/().*",
-            "pattern": [],
-            "symbolic_name": "logrotate_conf"
-        },
-        {
             "file": "/etc/rhsm/facts/virt_uuid.facts",
             "pattern": [],
             "symbolic_name": "virt_uuid_facts"
@@ -3011,6 +3006,11 @@
         {
             "glob": "/usr/lib*/ImageMagick-6.5.4/config/policy.xml",
             "symbolic_name": "imagemagick_policy",
+            "pattern": []
+        },
+        {
+            "glob": "/etc/logrotate.d/*",
+            "symbolic_name": "logrotate_conf",
             "pattern": []
         },
         {
