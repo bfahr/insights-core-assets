@@ -2728,11 +2728,6 @@
             "symbolic_name": "yum_conf"
         },
         {
-            "file": "/etc/yum.repos.d/()*.*\\.repo",
-            "pattern": [],
-            "symbolic_name": "yum_repos_d"
-        },
-        {
             "file": "/var/log/redhat-access-insights/redhat-access-insights.log",
             "pattern": [],
             "symbolic_name": "redhat_access_insights_log"
@@ -3142,6 +3137,11 @@
             "glob": "/etc/xinetd.d/*",
             "symbolic_name": "xinetd_conf",
             "pattern": []
+        },
+        {
+            "glob": "/etc/yum.repos.d/*",
+            "pattern": [],
+            "symbolic_name": "yum_repos_d"
         },
         {
             "glob": "/etc/httpd/conf.d/*/*.conf",
